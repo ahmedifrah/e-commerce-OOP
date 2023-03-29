@@ -12,4 +12,14 @@ class Product
         $this->name = $name;
         $this->price = $price;
     }
+
+    public function get_name()
+    {
+        return $this->name;
+    }
+
+    public function get_price()
+    {
+        return $this->price;
+    }
 }
