@@ -18,6 +18,8 @@ class Cart
     {
         if (($product = array_search($product, $this->cart)) !== false) {
             unset($this->cart[$product]);
+        } else {
+            return 'Product is not found on the cart and cannot be removed.';
         }
 
         return $this->cart;
