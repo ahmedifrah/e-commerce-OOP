@@ -10,4 +10,16 @@ $cart->add($shoe);
 $cart->add($dress);
 $cart->add($socks);
 
-var_dump($cart->getTotalPrice());
+
+
+var_dump($cart->clearAll());
+print_r($cart);
+
+$cart->add($dress);
+$cart->add($socks);
+print_r($cart);
+
+echo($cart->getTotalPrice());
+
+$cart->remove($dress);
+print_r($cart);
