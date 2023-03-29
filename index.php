@@ -1,0 +1,13 @@
+<?php
+require_once 'Cart.php';
+
+$shoe = new Product(1, 'Shoe', 50.00);
+$dress = new Product(2, 'Blue Dress', 90.00);
+$socks = new Product(3, 'Patterned Socks', 12.00);
+
+$cart = new Cart();
+$cart->add($shoe);
+$cart->add($dress);
+$cart->add($socks);
+
+var_dump($cart->getTotalPrice());
