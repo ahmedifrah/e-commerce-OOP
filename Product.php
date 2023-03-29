@@ -4,7 +4,7 @@ class Product
 {
     protected $id;
     protected $name;
-    protected $price;
+    public $price;
 
     public function __construct($id, $name, $price)
     {
