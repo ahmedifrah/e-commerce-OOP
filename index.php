@@ -24,5 +24,5 @@ echo($cart->getTotalPrice());
 $cart->remove($dress);
 print_r($cart);
 
-echo($shoe->get_name());
-echo($shoe->get_price());
+echo($shoe->getName());
+echo($shoe->getPrice());
